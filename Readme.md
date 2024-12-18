@@ -1,3 +1,5 @@
+![banner](https://cdn.discordapp.com/attachments/1305451657357819926/1318970646243573790/1vOk.gif?ex=676442a3&is=6762f123&hm=7b1f72c31a15af6d827addca5c7a0b2c2400ca09f39a0ba63439ffcd9c0bb3d8&)
+
 # Abaddon
 
 Abaddon is a powerful and streamlined distribution system software designed to simplify the deployment of selected files, particularly malware, to USB flash drives. With an intuitive interface, users can choose the malware they want to distribute, select the target USB device, and deploy the files in just a few clicks.
@@ -41,7 +43,7 @@ Abaddon is a powerful and streamlined distribution system software designed to s
 
 ## Screenshots
 
-![Main Interface](https://cdn.discordapp.com/attachments/1305451657357819926/1318970646243573790/1vOk.gif?ex=676442a3&is=6762f123&hm=7b1f72c31a15af6d827addca5c7a0b2c2400ca09f39a0ba63439ffcd9c0bb3d8&)
+![Main Interface](https://cdn.discordapp.com/attachments/1305451657357819926/1318974089792065556/12.PNG?ex=676445d8&is=6762f458&hm=cc425cd4789ec8a26ccdb57b526fef8218fbecb16d6ce4cae9dec94e9089586a&)
 *Main interface where you can select malware and USB devices.*
 
 ## Disclaimer
