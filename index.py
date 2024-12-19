@@ -38,7 +38,8 @@ class ProgramDistributor(QWidget):
         self.get_exe_files()
 
     def setup_ui(self):
-        main_layout = QHBoxLayout(self)
+        outer_layout = QVBoxLayout(self)  # Outer vertical layout
+        main_layout = QHBoxLayout()      # Inner horizontal layout
 
         left_column = QVBoxLayout()
         left_column.setAlignment(Qt.AlignCenter)
@@ -54,9 +55,9 @@ class ProgramDistributor(QWidget):
         right_column.setSpacing(20)
         right_column.setContentsMargins(40, 80, 20, 80)
 
-        title = QLabel("Kaizens Project: Abaddon")
+        title = QLabel("Project: Abaddon")
         title.setFont(QFont("Times", 18, QFont.Bold))
-        title.setAlignment(Qt.AlignCenter)
+        # title.setAlignment(Qt.AlignCenter)
         right_column.addWidget(title)
 
         self.program_dropdown = QComboBox()
@@ -120,7 +121,15 @@ class ProgramDistributor(QWidget):
         main_layout.addLayout(left_column, 1)
         main_layout.addLayout(right_column, 2)
 
-        self.setLayout(main_layout)
+        bottom_label = QLabel("Coded by: 0slo")
+        bottom_label.setFont(QFont("Helvetica", 8))
+        bottom_label.setAlignment(Qt.AlignCenter)
+        bottom_label.setStyleSheet("margin-top: 20px;")
+
+        outer_layout.addLayout(main_layout)  # Add main content
+        outer_layout.addWidget(bottom_label)  # Add the bottom label
+        self.setLayout(outer_layout)
+
 
     def get_usb_devices(self):
         partitions = psutil.disk_partitions()
@@ -136,7 +145,8 @@ class ProgramDistributor(QWidget):
         if usb_devices:
             self.usb_dropdown.addItems(usb_devices)
         else:
-            self.usb_dropdown.addItem("No USB devices found.")
+            # self.usb_dropdown.addItem("No USB devices found.")
+            pass
 
         if current_selection in usb_devices:
             self.usb_dropdown.setCurrentText(current_selection)
