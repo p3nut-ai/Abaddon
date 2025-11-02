@@ -27,7 +27,7 @@ class FileCopyThread(QThread):
 class ProgramDistributor(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("Kaizens Solutions")
+        self.setWindowTitle("Abaddon")
         self.setStyleSheet("background-color: black; color: white;")
         self.setWindowIcon(QIcon("1.png"))
         self.setup_ui()
@@ -45,7 +45,7 @@ class ProgramDistributor(QWidget):
         left_column.setAlignment(Qt.AlignCenter)
 
         logo_label = QLabel()
-        pixmap = QPixmap("1.png")
+        pixmap = QPixmap("1.jpg")
         pixmap = pixmap.scaled(400, 400, Qt.KeepAspectRatio, Qt.SmoothTransformation)
         logo_label.setPixmap(pixmap)
         logo_label.setAlignment(Qt.AlignCenter)
